@@ -100,14 +100,14 @@ func generateClashYAML(config *WireguardConfig) string {
 
 func main() {
 	if len(os.Args) < 2 {
-		fmt.Println("请提供Wireguard配置文件路径")
+		fmt.Println("Please provide the path to the WireGuard configuration file.")
 		return
 	}
 
 	configFilePath := os.Args[1]
 	config, err := parseWireguardConfig(configFilePath)
 	if err != nil {
-		fmt.Printf("解析配置文件出错: %v\n", err)
+		fmt.Printf("Failed to parse WireGuard configuration file: %v\n", err)
 		return
 	}
 
