@@ -8,5 +8,5 @@
 
 ```bash
 go install github.com/sd0ric4/wg_to_clash@latest
-wg_to_clash -i /path/to/wg0.conf
+wg_to_clash /path/to/wg0.conf
 ```
