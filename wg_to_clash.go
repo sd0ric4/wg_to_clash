@@ -70,8 +70,6 @@ func generateClashYAML(config *WireguardConfig) string {
 		yamlBuilder.WriteString(fmt.Sprintf("  ip: %s\n", config.Address))
 	}
 
-	yamlBuilder.WriteString("  ipv6: \n")
-
 	if config.PrivateKey != "" {
 		yamlBuilder.WriteString(fmt.Sprintf("  private-key: %s\n", config.PrivateKey))
 	}
